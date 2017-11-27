@@ -2,6 +2,7 @@
   "generator-jhipster": {
     "appsFolders": [
       "api-gateway",
+      "AuthorMicroservice",
       "BookMicroservice"
     ],
     "directoryPath": "../",

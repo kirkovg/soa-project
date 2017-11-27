@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "book",
+            "otherEntityName": "book",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "born",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "website",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171127191534",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "author",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "AuthorMicroservice",
+    "searchEngine": false
+}

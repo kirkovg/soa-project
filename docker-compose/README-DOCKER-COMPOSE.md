@@ -12,6 +12,8 @@ Launch all your infrastructure by running: `docker-compose up -d`.
 ### Applications and dependencies:
 - apigateway (gateway application)
 - apigateway's mysql database
+- AuthorMicroservice (microservice application)
+- AuthorMicroservice's mysql database
 - Book (microservice application)
 - Book's mysql database
 
