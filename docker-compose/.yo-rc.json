@@ -1,0 +1,14 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "api-gateway",
+      "BookMicroservice"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka",
+    "adminPassword": "admin",
+    "jwtSecretKey": "aa3ad4a9690f5102f7b221e8690a4a4ecfb6f9c2"
+  }
+}
