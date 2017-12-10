@@ -3,8 +3,7 @@
     "appsFolders": [
       "api-gateway",
       "AuthorMicroservice",
-      "BookMicroservice",
-      "GenreMicroservice"
+      "BookMicroservice"
     ],
     "directoryPath": "../",
     "gatewayType": "zuul",

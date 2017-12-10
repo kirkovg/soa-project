@@ -7,7 +7,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171210182049",
+    "changelogDate": "20171210185921",
     "dto": "mapstruct",
     "service": "serviceImpl",
     "entityTableName": "genre",
