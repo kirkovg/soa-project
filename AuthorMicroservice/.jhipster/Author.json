@@ -15,7 +15,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20171210185157",
+    "changelogDate": "20171210193612",
     "dto": "mapstruct",
     "service": "serviceImpl",
     "entityTableName": "author",
