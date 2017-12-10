@@ -16,6 +16,8 @@ Launch all your infrastructure by running: `docker-compose up -d`.
 - AuthorMicroservice's mysql database
 - Book (microservice application)
 - Book's mysql database
+- GenreMicroservice (microservice application)
+- GenreMicroservice's mysql database
 
 ### Additional Services:
 
