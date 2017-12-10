@@ -6,7 +6,6 @@ export class Author implements BaseEntity {
         public name?: string,
         public born?: number,
         public website?: string,
-        public bookId?: number,
     ) {
     }
 }

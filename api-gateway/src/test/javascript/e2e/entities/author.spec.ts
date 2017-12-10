@@ -41,7 +41,6 @@ describe('Author e2e test', () => {
         expect(authorDialogPage.getBornInput()).toMatch('5');
         authorDialogPage.setWebsiteInput('website');
         expect(authorDialogPage.getWebsiteInput()).toMatch('website');
-        authorDialogPage.bookSelectLastOption();
         authorDialogPage.save();
         expect(authorDialogPage.getSaveButton().isPresent()).toBeFalsy();
     }); 
@@ -71,7 +70,6 @@ export class AuthorDialogPage {
     nameInput = element(by.css('input#field_name'));
     bornInput = element(by.css('input#field_born'));
     websiteInput = element(by.css('input#field_website'));
-    bookSelect = element(by.css('select#field_book'));
 
     getModalTitle() {
         return this.modalTitle.getText();
@@ -99,22 +97,6 @@ export class AuthorDialogPage {
 
     getWebsiteInput = function () {
         return this.websiteInput.getAttribute('value');
-    }
-
-    bookSelectLastOption = function () {
-        this.bookSelect.all(by.tagName('option')).last().click();
-    }
-
-    bookSelectOption = function (option) {
-        this.bookSelect.sendKeys(option);
-    }
-
-    getBookSelect = function () {
-        return this.bookSelect;
-    }
-
-    getBookSelectedOption = function () {
-        return this.bookSelect.element(by.css('option:checked')).getText();
     }
 
     save() {

@@ -2,12 +2,14 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ApigatewayBookModule } from './book/book.module';
 import { ApigatewayAuthorModule } from './author/author.module';
+import { ApigatewayGenreModule } from './genre/genre.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
     imports: [
         ApigatewayBookModule,
         ApigatewayAuthorModule,
+        ApigatewayGenreModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

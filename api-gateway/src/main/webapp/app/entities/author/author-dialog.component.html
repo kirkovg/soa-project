@@ -28,13 +28,6 @@
                 [(ngModel)]="author.website"  />
         </div>
 
-        <div class="form-group">
-            <label class="form-control-label" for="field_book">Book</label>
-            <select class="form-control" id="field_book" name="book" [(ngModel)]="author.bookId" >
-                <option [ngValue]="null"></option>
-                <option [ngValue]="bookOption.id" *ngFor="let bookOption of books; trackBy: trackBookById">{{bookOption.name}}</option>
-            </select>
-        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">

@@ -16,12 +16,6 @@
         <dd>
             <span>{{author.website}}</span>
         </dd>
-        <dt><span>Book</span></dt>
-        <dd>
-            <div *ngIf="author.bookId">
-                <a [routerLink]="['/book', author.bookId]">{{author.bookName}}</a>
-            </div>
-        </dd>
     </dl>
 
     <button type="submit"

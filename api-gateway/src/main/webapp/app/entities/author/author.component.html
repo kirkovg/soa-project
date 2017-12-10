@@ -20,7 +20,6 @@
             <th jhiSortBy="name"><span>Name</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="born"><span>Born</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="website"><span>Website</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="bookName"><span>Book</span> <span class="fa fa-sort"></span></th>
             <th></th>
             </tr>
             </thead>
@@ -30,11 +29,6 @@
                 <td>{{author.name}}</td>
                 <td>{{author.born}}</td>
                 <td>{{author.website}}</td>
-                <td>
-                    <div *ngIf="author.bookId">
-                        <a [routerLink]="['../book', author.bookId  ]" >{{author.bookName}}</a>
-                    </div>
-                </td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
                         <button type="submit"
