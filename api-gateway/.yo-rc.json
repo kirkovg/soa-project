@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "mk.ukim.finki.soa",
-      "microservicePath": "../AuthorMicroservice"
+      "microservicePath": "../RatingMicroservice"
     },
     "jhipsterVersion": "4.9.0",
     "baseName": "apigateway",
