@@ -4,6 +4,7 @@ import { ApigatewayBookModule } from './book/book.module';
 import { ApigatewayAuthorModule } from './author/author.module';
 import { ApigatewayGenreModule } from './genre/genre.module';
 import { ApigatewayRatingModule } from './rating/rating.module';
+import { ApigatewayUserpreferenceModule } from './userpreference/userpreference.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ApigatewayRatingModule } from './rating/rating.module';
         ApigatewayAuthorModule,
         ApigatewayGenreModule,
         ApigatewayRatingModule,
+        ApigatewayUserpreferenceModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

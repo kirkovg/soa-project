@@ -20,6 +20,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
                 '/authormicroservice',
                 '/genremicroservice',
                 '/ratingmicroservice',
+                '/userpreferencesmicroservice',
                 /* jhipster-needle-add-entity-to-webpack - JHipster will add entity api paths here */
                 '/api',
                 '/management',

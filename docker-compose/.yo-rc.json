@@ -5,7 +5,8 @@
       "AuthorMicroservice",
       "BookMicroservice",
       "GenreMicroservice",
-      "RatingMicroservice"
+      "RatingMicroservice",
+      "UserPreferencesMicroservice"
     ],
     "directoryPath": "../",
     "gatewayType": "zuul",

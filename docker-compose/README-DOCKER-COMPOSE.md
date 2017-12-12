@@ -20,6 +20,8 @@ Launch all your infrastructure by running: `docker-compose up -d`.
 - GenreMicroservice's mysql database
 - RatingMicroservice (microservice application)
 - RatingMicroservice's mysql database
+- UserPreferencesMicroservice (microservice application)
+- UserPreferencesMicroservice's mysql database
 
 ### Additional Services:
 
