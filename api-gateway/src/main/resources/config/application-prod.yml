@@ -13,6 +13,12 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
+logging:
+    level:
+        ROOT: INFO
+        mk.ukim.finki.soa: INFO
+        io.github.jhipster: INFO
+
 eureka:
     instance:
         prefer-ip-address: true
@@ -81,8 +87,8 @@ liquibase:
 #    ssl:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
-#        keyStoreType: PKCS12
-#        keyAlias: ApiGateway
+#        key-store-type: PKCS12
+#        key-alias: ApiGateway
 # ===================================================================
 server:
     port: 8080
@@ -111,10 +117,14 @@ jhipster:
         hazelcast: # Hazelcast distributed cache
             time-to-live-seconds: 3600
             backup-count: 1
+            management-center: # Full reference is available at: http://docs.hazelcast.org/docs/management-center/3.9/manual/html/Deploying_and_Starting.html
+                enabled: false
+                update-interval: 3
+                url:
     security:
         authentication:
             jwt:
-                secret: b0e290aa91f826ab75998f07e30e170141ceb5db
+                secret: 98b968d313ef58541d7d53c23baaf027b4169ceb
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000

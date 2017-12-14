@@ -15,12 +15,12 @@
         <div class="form-group">
             <label class="form-control-label" for="field_genre">Genre</label>
             <input type="text" class="form-control" name="genre" id="field_genre"
-                [(ngModel)]="userpreference.genre"  />
+                [(ngModel)]="userpreference.genre" />
         </div>
         <div class="form-group">
             <label class="form-control-label" for="field_score">Score</label>
             <input type="number" class="form-control" name="score" id="field_score"
-                [(ngModel)]="userpreference.score" min="1" max="10" />
+                [(ngModel)]="userpreference.score" min="1" max="10"/>
             <div [hidden]="!(editForm.controls.score?.dirty && editForm.controls.score?.invalid)">
                 <small class="form-text text-danger"
                     [hidden]="!editForm.controls.score?.errors?.min">
@@ -39,7 +39,7 @@
         <div class="form-group">
             <label class="form-control-label" for="field_userId">User Id</label>
             <input type="number" class="form-control" name="userId" id="field_userId"
-                [(ngModel)]="userpreference.userId"  />
+                [(ngModel)]="userpreference.userId" />
         </div>
 
     </div>

@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Response } from '@angular/http';
 
 import { Observable } from 'rxjs/Rx';
-import { NgbActiveModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { JhiEventManager, JhiAlertService, JhiDataUtils } from 'ng-jhipster';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { JhiEventManager, JhiDataUtils } from 'ng-jhipster';
 
 import { Bookpicture } from './bookpicture.model';
 import { BookpicturePopupService } from './bookpicture-popup.service';
@@ -22,7 +22,6 @@ export class BookpictureDialogComponent implements OnInit {
     constructor(
         public activeModal: NgbActiveModal,
         private dataUtils: JhiDataUtils,
-        private jhiAlertService: JhiAlertService,
         private bookpictureService: BookpictureService,
         private elementRef: ElementRef,
         private eventManager: JhiEventManager
@@ -77,10 +76,6 @@ export class BookpictureDialogComponent implements OnInit {
 
     private onSaveError() {
         this.isSaving = false;
-    }
-
-    private onError(error: any) {
-        this.jhiAlertService.error(error.message, null, null);
     }
 }
 

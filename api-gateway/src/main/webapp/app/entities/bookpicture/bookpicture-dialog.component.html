@@ -25,14 +25,14 @@
                 <input type="file" id="file_picture" (change)="setFileData($event, bookpicture, 'picture', true)" accept="image/*"/>
             </div>
             <input type="hidden" class="form-control" name="picture" id="field_picture"
-                [(ngModel)]="bookpicture.picture"  />
+                [(ngModel)]="bookpicture.picture" />
             <input type="hidden" class="form-control" name="pictureContentType" id="field_pictureContentType"
                 [(ngModel)]="bookpicture.pictureContentType" />
         </div>
         <div class="form-group">
             <label class="form-control-label" for="field_bookId">Book Id</label>
             <input type="number" class="form-control" name="bookId" id="field_bookId"
-                [(ngModel)]="bookpicture.bookId"  />
+                [(ngModel)]="bookpicture.bookId" />
         </div>
 
     </div>

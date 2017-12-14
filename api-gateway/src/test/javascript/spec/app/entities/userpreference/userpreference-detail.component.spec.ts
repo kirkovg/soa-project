@@ -1,12 +1,8 @@
 /* tslint:disable max-line-length */
-import { ComponentFixture, TestBed, async, inject } from '@angular/core/testing';
-import { OnInit } from '@angular/core';
-import { DatePipe } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
-import { JhiDateUtils, JhiDataUtils, JhiEventManager } from 'ng-jhipster';
+
 import { ApiGatewayTestModule } from '../../../test.module';
-import { MockActivatedRoute } from '../../../helpers/mock-route.service';
 import { UserpreferenceDetailComponent } from '../../../../../../main/webapp/app/entities/userpreference/userpreference-detail.component';
 import { UserpreferenceService } from '../../../../../../main/webapp/app/entities/userpreference/userpreference.service';
 import { Userpreference } from '../../../../../../main/webapp/app/entities/userpreference/userpreference.model';
@@ -23,17 +19,10 @@ describe('Component Tests', () => {
                 imports: [ApiGatewayTestModule],
                 declarations: [UserpreferenceDetailComponent],
                 providers: [
-                    JhiDateUtils,
-                    JhiDataUtils,
-                    DatePipe,
-                    {
-                        provide: ActivatedRoute,
-                        useValue: new MockActivatedRoute({id: 123})
-                    },
-                    UserpreferenceService,
-                    JhiEventManager
+                    UserpreferenceService
                 ]
-            }).overrideTemplate(UserpreferenceDetailComponent, '')
+            })
+            .overrideTemplate(UserpreferenceDetailComponent, '')
             .compileComponents();
         }));
 
@@ -45,16 +34,16 @@ describe('Component Tests', () => {
 
         describe('OnInit', () => {
             it('Should call load all on init', () => {
-            // GIVEN
+                // GIVEN
 
-            spyOn(service, 'find').and.returnValue(Observable.of(new Userpreference(10)));
+                spyOn(service, 'find').and.returnValue(Observable.of(new Userpreference(123)));
 
-            // WHEN
-            comp.ngOnInit();
+                // WHEN
+                comp.ngOnInit();
 
-            // THEN
-            expect(service.find).toHaveBeenCalledWith(123);
-            expect(comp.userpreference).toEqual(jasmine.objectContaining({id: 10}));
+                // THEN
+                expect(service.find).toHaveBeenCalledWith(123);
+                expect(comp.userpreference).toEqual(jasmine.objectContaining({id: 123}));
             });
         });
     });

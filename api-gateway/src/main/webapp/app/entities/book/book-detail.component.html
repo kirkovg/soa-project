@@ -31,6 +31,7 @@
     <button type="button"
             [routerLink]="['/', { outlets: { popup: 'book/'+ book.id + '/edit'} }]"
             replaceUrl="true"
+            queryParamsHandling="merge"
             class="btn btn-primary">
         <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
     </button>

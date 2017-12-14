@@ -4,7 +4,7 @@
       "packageName": "mk.ukim.finki.soa",
       "microservicePath": "../UserPreferencesMicroservice"
     },
-    "jhipsterVersion": "4.9.0",
+    "jhipsterVersion": "4.13.0",
     "baseName": "ApiGateway",
     "packageName": "mk.ukim.finki.soa",
     "packageFolder": "mk/ukim/finki/soa",
@@ -22,7 +22,7 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "b0e290aa91f826ab75998f07e30e170141ceb5db",
+    "jwtSecretKey": "98b968d313ef58541d7d53c23baaf027b4169ceb",
     "clientFramework": "angularX",
     "useSass": false,
     "clientPackageManager": "yarn",

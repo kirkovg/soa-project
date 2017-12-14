@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { ApiGatewayBookModule } from './book/book.module';
 import { ApiGatewayAuthorModule } from './author/author.module';
+import { ApiGatewayBookModule } from './book/book.module';
 import { ApiGatewayBookpictureModule } from './bookpicture/bookpicture.module';
 import { ApiGatewayGenreModule } from './genre/genre.module';
 import { ApiGatewayRatingModule } from './rating/rating.module';
@@ -10,8 +10,8 @@ import { ApiGatewayUserpreferenceModule } from './userpreference/userpreference.
 
 @NgModule({
     imports: [
-        ApiGatewayBookModule,
         ApiGatewayAuthorModule,
+        ApiGatewayBookModule,
         ApiGatewayBookpictureModule,
         ApiGatewayGenreModule,
         ApiGatewayRatingModule,
