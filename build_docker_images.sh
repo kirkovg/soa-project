@@ -1,29 +1,29 @@
 #!/bin/bash
 
-cd AuthorMicroservice
+cd author-microservice
 bash mvnw package -Pprod -DskipTests dockerfile:build
 cd ..
 
-cd BookMicroservice
+cd book-microservice
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd BookPictureMicroservice 
+cd book-picture-microservice 
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd GenreMicroservice 
+cd genre-microservice 
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd RatingMicroservice 
+cd rating-microservice 
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd UserPreferencesMicroservice 
+cd user-preferences-microservice 
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd BookApiGateway
+cd book-api-microservice
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
