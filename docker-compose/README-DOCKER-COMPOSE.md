@@ -10,10 +10,10 @@ Launch all your infrastructure by running: `docker-compose up -d`.
 - [JHipster Registry](http://localhost:8761)
 
 ### Applications and dependencies:
-- ApiGateway (gateway application)
-- ApiGateway's mysql database
 - AuthorMicroservice (microservice application)
 - AuthorMicroservice's mysql database
+- BookApiGateway (gateway application)
+- BookApiGateway's mysql database
 - Book (microservice application)
 - Book's mysql database
 - BookPictureMicroservice (microservice application)

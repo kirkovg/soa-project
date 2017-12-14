@@ -1,8 +1,8 @@
 {
   "generator-jhipster": {
     "appsFolders": [
-      "api-gateway",
       "AuthorMicroservice",
+      "BookApiGateway",
       "BookMicroservice",
       "BookPictureMicroservice",
       "GenreMicroservice",
