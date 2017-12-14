@@ -24,6 +24,6 @@ cd user-preferences-microservice
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
 
-cd book-api-microservice
+cd book-api-gateway
 bash mvnw package -Pprod -DskipTests dockerfile:build 
 cd ..
