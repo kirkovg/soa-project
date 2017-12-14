@@ -4,6 +4,7 @@
       "api-gateway",
       "AuthorMicroservice",
       "BookMicroservice",
+      "BookPictureMicroservice",
       "GenreMicroservice",
       "RatingMicroservice",
       "UserPreferencesMicroservice"
