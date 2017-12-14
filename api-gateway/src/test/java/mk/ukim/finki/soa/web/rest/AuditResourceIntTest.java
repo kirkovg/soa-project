@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.web.rest;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import mk.ukim.finki.soa.config.audit.AuditEventConverter;
 import mk.ukim.finki.soa.domain.PersistentAuditEvent;
 import mk.ukim.finki.soa.repository.PersistenceAuditEventRepository;
@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see AuditResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 @Transactional
 public class AuditResourceIntTest {
 

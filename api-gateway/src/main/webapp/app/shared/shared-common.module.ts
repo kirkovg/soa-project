@@ -2,14 +2,14 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import {
-    ApigatewaySharedLibsModule,
+    ApiGatewaySharedLibsModule,
     JhiAlertComponent,
     JhiAlertErrorComponent
 } from './';
 
 @NgModule({
     imports: [
-        ApigatewaySharedLibsModule
+        ApiGatewaySharedLibsModule
     ],
     declarations: [
         JhiAlertComponent,
@@ -23,9 +23,9 @@ import {
         },
     ],
     exports: [
-        ApigatewaySharedLibsModule,
+        ApiGatewaySharedLibsModule,
         JhiAlertComponent,
         JhiAlertErrorComponent
     ]
 })
-export class ApigatewaySharedCommonModule {}
+export class ApiGatewaySharedCommonModule {}

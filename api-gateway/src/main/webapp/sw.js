@@ -1,5 +1,5 @@
-var dataCacheName = 'Apigateway-v1';
-var cacheName = 'Apigateway-1';
+var dataCacheName = 'ApiGateway-v1';
+var cacheName = 'ApiGateway-1';
 var filesToCache = [
     '/',
     '/index.html'

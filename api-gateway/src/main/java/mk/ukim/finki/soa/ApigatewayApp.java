@@ -28,18 +28,18 @@ import java.util.Collection;
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class ApigatewayApp {
+public class ApiGatewayApp {
 
-    private static final Logger log = LoggerFactory.getLogger(ApigatewayApp.class);
+    private static final Logger log = LoggerFactory.getLogger(ApiGatewayApp.class);
 
     private final Environment env;
 
-    public ApigatewayApp(Environment env) {
+    public ApiGatewayApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes apigateway.
+     * Initializes ApiGateway.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
@@ -65,7 +65,7 @@ public class ApigatewayApp {
      * @throws UnknownHostException if the local host name could not be resolved into an address
      */
     public static void main(String[] args) throws UnknownHostException {
-        SpringApplication app = new SpringApplication(ApigatewayApp.class);
+        SpringApplication app = new SpringApplication(ApiGatewayApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

@@ -1,4 +1,4 @@
-# apigateway
+# ApiGateway
 This application was generated using JHipster 4.9.0, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.9.0](http://www.jhipster.tech/documentation-archive/v4.9.0).
 
 This is a "gateway" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
@@ -97,7 +97,7 @@ will generate few files:
 
 ## Building for production
 
-To optimize the apigateway application for production, run:
+To optimize the ApiGateway application for production, run:
 
     ./mvnw -Pprod clean package
 
@@ -122,8 +122,7 @@ Unit tests are run by [Karma][] and written with [Jasmine][]. They're located in
 
     yarn test
 
-UI end-to-end tests are powered by [Protractor][], which is built on top of WebDriverJS. They're located in [src/test/javascript/e2e](src/test/javascript/e2e)
-and can be run by starting Spring Boot in one terminal (`./mvnw spring-boot:run`) and running the tests (`yarn run e2e`) in a second one.
+
 
 For more information, refer to the [Running tests page][].
 

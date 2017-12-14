@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.web.rest;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import mk.ukim.finki.soa.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see LogsResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 public class LogsResourceIntTest {
 
     private MockMvc restLogsMockMvc;

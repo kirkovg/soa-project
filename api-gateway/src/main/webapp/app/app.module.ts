@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2Webstorage } from 'ng2-webstorage';
 
-import { ApigatewaySharedModule, UserRouteAccessService } from './shared';
-import { ApigatewayHomeModule } from './home/home.module';
-import { ApigatewayAdminModule } from './admin/admin.module';
-import { ApigatewayAccountModule } from './account/account.module';
-import { ApigatewayEntityModule } from './entities/entity.module';
+import { ApiGatewaySharedModule, UserRouteAccessService } from './shared';
+import { ApiGatewayHomeModule } from './home/home.module';
+import { ApiGatewayAdminModule } from './admin/admin.module';
+import { ApiGatewayAccountModule } from './account/account.module';
+import { ApiGatewayEntityModule } from './entities/entity.module';
 
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
@@ -29,11 +29,11 @@ import {
         BrowserModule,
         LayoutRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
-        ApigatewaySharedModule,
-        ApigatewayHomeModule,
-        ApigatewayAdminModule,
-        ApigatewayAccountModule,
-        ApigatewayEntityModule,
+        ApiGatewaySharedModule,
+        ApiGatewayHomeModule,
+        ApiGatewayAdminModule,
+        ApiGatewayAccountModule,
+        ApiGatewayEntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
@@ -51,4 +51,4 @@ import {
     ],
     bootstrap: [ JhiMainComponent ]
 })
-export class ApigatewayAppModule {}
+export class ApiGatewayAppModule {}

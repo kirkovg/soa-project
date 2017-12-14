@@ -1,6 +1,6 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ProdConfig } from './blocks/config/prod.config';
-import { ApigatewayAppModule } from './app.module';
+import { ApiGatewayAppModule } from './app.module';
 
 ProdConfig();
 
@@ -8,6 +8,6 @@ if (module['hot']) {
     module['hot'].accept();
 }
 
-platformBrowserDynamic().bootstrapModule(ApigatewayAppModule)
+platformBrowserDynamic().bootstrapModule(ApiGatewayAppModule)
 .then((success) => console.log(`Application started`))
 .catch((err) => console.error(err));

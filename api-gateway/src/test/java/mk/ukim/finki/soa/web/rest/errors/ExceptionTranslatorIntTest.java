@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.web.rest.errors;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ExceptionTranslator
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 public class ExceptionTranslatorIntTest {
 
     @Autowired

@@ -2,10 +2,10 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "mk.ukim.finki.soa",
-      "microservicePath": "../BookPictureMicroservice"
+      "microservicePath": "../UserPreferencesMicroservice"
     },
     "jhipsterVersion": "4.9.0",
-    "baseName": "apigateway",
+    "baseName": "ApiGateway",
     "packageName": "mk.ukim.finki.soa",
     "packageFolder": "mk/ukim/finki/soa",
     "serverPort": "8080",
@@ -22,14 +22,12 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "a98db1b65132e5648f3193669810a9a549856594",
+    "jwtSecretKey": "b0e290aa91f826ab75998f07e30e170141ceb5db",
     "clientFramework": "angularX",
     "useSass": false,
     "clientPackageManager": "yarn",
     "applicationType": "gateway",
-    "testFrameworks": [
-      "protractor"
-    ],
+    "testFrameworks": [],
     "jhiPrefix": "jhi",
     "enableTranslation": false
   }

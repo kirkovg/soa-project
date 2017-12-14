@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.repository;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import mk.ukim.finki.soa.config.Constants;
 import mk.ukim.finki.soa.config.audit.AuditEventConverter;
 import mk.ukim.finki.soa.domain.PersistentAuditEvent;
@@ -32,7 +32,7 @@ import static mk.ukim.finki.soa.repository.CustomAuditEventRepository.EVENT_DATA
  * @see CustomAuditEventRepository
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIntTest {
 

@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "project": {
-        "name": "apigateway"
+        "name": "api-gateway"
     },
     "apps": [{
         "root": "src/main/webapp",
@@ -23,11 +23,6 @@
         ],
         "scripts": []
     }],
-    "e2e": {
-        "protractor": {
-            "config": "src/test/javascript/protractor.conf.js"
-        }
-    },
     "lint": [{
             "project": "../../../tsconfig.json"
         },

@@ -5,7 +5,7 @@ import { DatePipe } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { JhiDateUtils, JhiDataUtils, JhiEventManager } from 'ng-jhipster';
-import { ApigatewayTestModule } from '../../../test.module';
+import { ApiGatewayTestModule } from '../../../test.module';
 import { MockActivatedRoute } from '../../../helpers/mock-route.service';
 import { GenreDetailComponent } from '../../../../../../main/webapp/app/entities/genre/genre-detail.component';
 import { GenreService } from '../../../../../../main/webapp/app/entities/genre/genre.service';
@@ -20,7 +20,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [ApigatewayTestModule],
+                imports: [ApiGatewayTestModule],
                 declarations: [GenreDetailComponent],
                 providers: [
                     JhiDateUtils,

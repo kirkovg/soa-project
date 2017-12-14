@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.web.rest;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import mk.ukim.finki.soa.domain.Authority;
 import mk.ukim.finki.soa.domain.User;
 import mk.ukim.finki.soa.repository.UserRepository;
@@ -47,7 +47,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see UserResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 public class UserResourceIntTest {
 
     private static final Long DEFAULT_ID = 1L;

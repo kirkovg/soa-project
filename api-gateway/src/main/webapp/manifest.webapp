@@ -1,6 +1,6 @@
 {
-  "name": "Apigateway",
-  "short_name": "Apigateway",
+  "name": "ApiGateway",
+  "short_name": "ApiGateway",
   "icons": [
       {
           "src": "./content/images/logo-jhipster.png",

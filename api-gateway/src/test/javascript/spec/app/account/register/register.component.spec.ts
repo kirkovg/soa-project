@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, async, inject, tick, fakeAsync } from '@angular/core/testing';
 import { Renderer, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-import { ApigatewayTestModule } from '../../../test.module';
+import { ApiGatewayTestModule } from '../../../test.module';
 import { LoginModalService } from '../../../../../../main/webapp/app/shared';
 import { Register } from '../../../../../../main/webapp/app/account/register/register.service';
 import { RegisterComponent } from '../../../../../../main/webapp/app/account/register/register.component';
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [ApigatewayTestModule],
+                imports: [ApiGatewayTestModule],
                 declarations: [RegisterComponent],
                 providers: [
                     Register,

@@ -1,6 +1,6 @@
 package mk.ukim.finki.soa.service;
 
-import mk.ukim.finki.soa.ApigatewayApp;
+import mk.ukim.finki.soa.ApiGatewayApp;
 import mk.ukim.finki.soa.domain.User;
 import mk.ukim.finki.soa.config.Constants;
 import mk.ukim.finki.soa.repository.UserRepository;
@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.*;
  * @see UserService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApigatewayApp.class)
+@SpringBootTest(classes = ApiGatewayApp.class)
 @Transactional
 public class UserServiceIntTest {
 
