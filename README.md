@@ -16,6 +16,7 @@ on various categories of books like name, authors, year, publication date etc.
 5. Once all the images have been built successfully, run the JHipster Registry `docker-compose -f jhipster-registry.yml up`
 6. Navigate to `soa-project/docker-compose`. This is where the central configuration file `docker-compose.yml` is and from here you can run all the microservices at once `docker-compose up -d`.
 7. Check if all processes are running correctly with `docker ps` (you should see a process for each microservice container).
+8. The frontend of the application is running on port 8080, with default login "admin:admin". The list of registered microservices can be accessed on port 8761 on the JHipster registry.
 
 ## Application architecture
 
@@ -37,12 +38,10 @@ The initial database records will be filled with data scraped from the web.
 * Genre microservice
 * Rating microservice
 * Book microservice
-* Random search microservice
-* User microservice
+* Book picture microservice
 * User Preferences microservice
-* Edge service (Zuul from Netflix OSS)
-* Eureka service registry (from Netflix OSS)
-* Custom API Gateway
+* JHipster service registry 
+* Custom Book API Gateway
 
 ## Picture of application architecture
  ![alt text][logo]
@@ -54,9 +53,6 @@ The initial database records will be filled with data scraped from the web.
 Following are all the endpoints available with their corresponding HTTP methods grouped by logical parts of the system.
 ### Books
 * GET: __/api/books__ - retrieves paged result of all books
-	* Query string:
-		* size (int) - page size
-		* page (int) - page number
 * GET: __/api/books/{bookId}__ - retrieves book details
 * GET: __/api/books/search__ - searches books by name and description
 	* Query string:
@@ -71,7 +67,6 @@ Following are all the endpoints available with their corresponding HTTP methods 
 		* authorId
 * PUT: __/api/books/{bookId}__ - updates details for book with given ID
 * DELETE: __/api/books/{bookId}__ - deletes book with given ID
-* GET: __/api/random__ - retrieves randomized list of books (5 books per page)
 
 ### Authors
 * GET: __/api/authors__ - retrieves all authors
@@ -79,7 +74,6 @@ Following are all the endpoints available with their corresponding HTTP methods 
 * POST: __/api/authors__ - creates new author
 	* Data parameters:
 		* name
-		* surname
 		* born
 		* website
 * PUT: __/api/authors/{authorId}__ - updates details for author with given ID
@@ -96,13 +90,14 @@ Following are all the endpoints available with their corresponding HTTP methods 
 
 ### Ratings
 * GET: __/api/ratings__ - lists all books with a value for the rating equal to the one supplied in the request parameters
-	* Query string:
-		* pageSize (int) - number of results per page
-		* pageNumber (int) - specific page you want to retrieve
-		* grade (float) - rating/grade to filter by
+	* Data parameters:
+		* bookId - rating for which book
+		* userId - by which user the rating is given
+		* score (float) - rating/grade to filter by
 * GET: __/api/ratings/{bookId}__ - retrieves average grade for book with given ID
 * POST: __/api/ratings/{bookId}__ - rates book (updates average grade)
 * DELETE: __/api/ratings/{bookId}__ - deletes rating for book
+* PUT: __/api/ratings__ - modifies data for existing rating
 
 ### Users
 * GET: __/api/users__ - retrieves a list of all registered users
