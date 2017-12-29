@@ -5,12 +5,21 @@ Course: Service Oriented Architecture @ [FCSE](https://www.finki.ukim.mk)
 
 ## Short description
 
-The bussiness logic of the API will consist of mostly search operations
+The business logic of the API will consist of mostly search operations
 on various categories of books like name, authors, year, publication date etc.
+
+## Instructions to run on server
+1. Clone the repository
+2. Navigate to the newly created folder `cd soa-project`
+3. Stop any running containers you might have `docker stop $(docker ps -a -q)`
+4. If you haven't built the docker images for the microservices, you can do so by running the bash script `bash build_docker_images.sh`.
+5. Once all the images have been built successfully, run the JHipster Registry `docker-compose -f jhipster-registry.yml up`
+6. Navigate to `soa-project/docker-compose`. This is where the central configuration file `docker-compose.yml` is and from here you can run all the microservices at once `docker-compose up -d`.
+7. Check if all processes are running correctly with `docker ps` (you should see a process for each microservice container).
 
 ## Application architecture
 
-The functionalities of searching through various criterias are separated
+The functionalities of searching through various criteria are separated
 in different microservices (see microservice list below.) to balance the strain in case of heavy load.
 While searching through the book data the requests will mostly depend on the
 User Preferences microservice which will hold the the data about what the user likes
