@@ -99,13 +99,21 @@ Following are all the endpoints available with their corresponding HTTP methods 
 * DELETE: __/api/ratings/{bookId}__ - deletes rating for book
 * PUT: __/api/ratings__ - modifies data for existing rating
 
-### Users
-* GET: __/api/users__ - retrieves a list of all registered users
-* POST: __/api/users/register__ - creates a new user
+### User preferences 
+* GET: __/api/userpreferences__ - retrieves a list of all user preferences in the system
+* POST: __/api/userpreferences__ - creates a preference
 	* Data parameters:
-		* userName
-		* password
-		* email
+		* userId
+		* genre - which genre is the user rating
+		* score - how preferred is the genre
+		
+### Book picture 
+* POST: __/api/bookpictures__ -  send the picture as bytes
+    * Data parameters:
+        * Picture as bytes
+        * bookId - the book the picture belongs to
+* GET: __/api/bookpictures__ - get a list of all pictures
+* GET: __api/bookpictures/{id}__ - get picture for book with *id*
 
  
 ## Team Members
